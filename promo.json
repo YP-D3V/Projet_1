@@ -1,0 +1,19 @@
+{
+    "apprenants": [
+        {"id" : "001", "nom" : "DUPONT", "prenom" : "Marie", "ville" : "Nantes", "anecdotes" : ["1ère de promo JS", "A crashé 3 ordis en 1 semaine" ], "avatar" : "", "longitude" : -1.5536, "latitude" : 47.2184 },
+        {"id" : "002", "nom" : "MARTIN", "prenom" : "Paul", "ville" : "Rennes", "anecdotes" : ["Roi du CSS", "A dormi dans la salle serveur" ], "avatar" : "", "longitude" : -1.6743, "latitude" : 48.1113 },
+        {"id" : "003", "nom" : "LEBRUN", "prenom" : "Sophie", "ville" : "Angers", "anecdotes" : ["Reine de React", "A codé son chat avec JS" ], "avatar" : "", "longitude" : -0.5632, "latitude" : 47.4784 },
+        {"id" : "004", "nom" : "GARCIA", "prenom" : "Lucas", "ville" : "Le Mans", "anecdotes" : ["Spécialiste API", "A hacké la machine à café" ], "avatar" : "", "longitude" : 0.2018, "latitude" : 48.0003 },
+        {"id" : "005", "nom" : "MOREAU", "prenom" : "Emma", "ville" : "Cholet", "anecdotes" : ["Maîtresse HTML", "A fait un site pour ses plantes" ], "avatar" : "", "longitude" : -0.8419, "latitude" : 47.1256 },
+        {"id" : "006", "nom" : "PETIT", "prenom" : "Julien", "ville" : "Saumur", "anecdotes" : ["Fan de Node.js", "A codé un bot Discord" ], "avatar" : "", "longitude" : -0.0774, "latitude" : 47.2585 },
+        {"id" : "007", "nom" : "ROY", "prenom" : "Clara", "ville" : "Laval", "anecdotes" : ["Pro Git", "A sauvé le projet de l'équipe" ], "avatar" : "", "longitude" : -0.7665, "latitude" : 48.0732 },
+        {"id" : "008", "nom" : "DELORME", "prenom" : "Thomas", "ville" : "Ancenis", "anecdotes" : ["Expert SQL", "Vit dans VS Code" ], "avatar" : "", "longitude" : -1.2007, "latitude" : 47.3619 },
+        {"id" : "009", "nom" : "LAMBERT", "prenom" : "Léa", "ville" : "Saint-Nazaire", "anecdotes" : ["Design thinking", "A redesigné le site ENI" ], "avatar" : "", "longitude" : -2.2133, "latitude" : 47.2731 },
+        {"id" : "010", "nom" : "BERNARD", "prenom" : "Nicolas", "ville" : "La Roche-sur-Yon", "anecdotes" : ["DevOps ninja", "A 5 écrans à la maison" ], "avatar" : "", "longitude" : -1.4257, "latitude" : 46.8186 },
+        {"id" : "011", "nom" : "SIMON", "prenom" : "Manon", "ville" : "Challans", "anecdotes" : ["UX/UI passionnée", "A testé sur son chat" ], "avatar" : "", "longitude" : -1.8703, "latitude" : 46.9248 },
+        {"id" : "012", "nom" : "ROBIN", "prenom" : "Enzo", "ville" : "Les Herbiers", "anecdotes" : ["Jeu vidéo addict", "A gamifié son apprentissage" ], "avatar" : "", "longitude" : -0.9691, "latitude" : 46.8839 },
+        {"id" : "013", "nom" : "FOURNIER", "prenom" : "Alice", "ville" : "Pouzauges", "anecdotes" : ["Back-end solide", "Aime les lundis (oui oui)" ], "avatar" : "", "longitude" : -0.7199, "latitude" : 46.5022 },
+        {"id" : "014", "nom" : "MEUNIER", "prenom" : "Raphaël", "ville" : "Clisson", "anecdotes" : ["Front puriste", "A recodé Bootstrap" ], "avatar" : "", "longitude" : -1.2241, "latitude" : 47.0887 },
+        {"id" : "015", "nom" : "ANDRE", "prenom" : "Océane", "ville" : "Vertou", "anecdotes" : ["Fullstack polyvalente", "Code en écoutant du métal" ], "avatar" : "", "longitude" : -1.4752, "latitude" : 47.2021 }
+    ]
+}
