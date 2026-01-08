@@ -31,7 +31,7 @@ function appliquerPreferences() {
     const format = localStorage.getItem('affichage');
     if (format) {
         const affichage = document.getElementsByName('affichage');
-        affichage.forEach(radio => {
+        Array.from(affichage).forEach(radio => {
             radio.checked = (radio.value === format);
         });
     }
@@ -49,40 +49,42 @@ function chargerApprenants() {
 }
 
 function afficherApprenants(apprenants, format) {
-    const listeContainer = document.getElementById('apprenants');
-    const cartesContainer = document.getElementById('cartes');
+    const listeContainer = document.getElementById('liste-container');
+    const cartesContainer = document.getElementById('cartes-container');
 
     if (!listeContainer || !cartesContainer) return;
     
     if (format === 'liste') {
-        listeContainer.classList.remove('cache');
-        cartesContainer.classList.remove('actif');
+        listeContainer.classList.remove('d-none');
+        cartesContainer.classList.add('d-none');
         afficherListe(apprenants);
     } else if (format === 'cartes') {
-        listeContainer.classList.add('cache');
-        cartesContainer.classList.add('actif');
+        listeContainer.classList.add('d-none');
+        cartesContainer.classList.remove('d-none');
         afficherCartes(apprenants);
     }
 }
 
 function afficherListe(apprenants) {
-    const container = document.getElementById('apprenants');
-    container.innerHTML = ''; // Vider l'ancienne liste
-    
+    const tbody = document.getElementById('apprenants-table');
+    tbody.innerHTML = '';
+
     apprenants.forEach(apprenant => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-            <h3>${apprenant.nom} ${apprenant.prenom}</h3>
-            <p>Ville : ${apprenant.ville}</p>
-            <a href="">Détails</a>
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+        <td>${apprenant.nom}</td>
+        <td>${apprenant.prenom}</td>
+        <td>${apprenant.ville}</td>
+        <td><a href="#" class="btn btn-sm btn-outline-primary">Détail</a></td>
         `;
-        container.appendChild(li);
+        tbody.appendChild(tr);
     });
 }
 
+
 function afficherCartes(apprenants) {
-    const container = document.getElementById('cartes');
-    container.innerHTML = ''; // Vider
+    const container = document.getElementById('cartes-container');
+    container.innerHTML = ''; 
     
     apprenants.forEach(apprenant => {
         const carte = document.createElement('div');

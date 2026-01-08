@@ -5,61 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promo EDWM2511FT</title>
     <script src="js/app.js" defer></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-primary text-white">
+<body class = "page-informations">
+    <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo ENI" height="40">
-            Promo EDWM2511FT
+                <img src="images/logo.png" alt="Logo ENI" class="navbar-brand-img">
             </a>
+            <span class="navbar-text mx-auto">Promo EDWM2511FT</span>            
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preferences.html">Préférences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="carte.html">Carte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="informations.html">Informations</a>
-                    </li>
-                </ul>
+            <div class="navbar-nav ms-auto d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="index.html" class="btn btn-primary me-md-2" type="button">Accueil</a>
+                <a href="preferences.html" class="btn btn-primary me-md-2" type="button">Préférences</a>
+                <a href="carte.html" class="btn btn-primary me-md-2" type="button">Carte</a>
+                <a href="informations.html" class="btn btn-primary" type="button">Informations</a>
+            </div>
+
             </div>
         </div>
     </nav>
     <main>
         <h2>Formation Développement Web & Web Mobile</h2>
-        <p>Formation du 24/11/2025 au 01/05/2026</p>
-        <p>Nombre d'apprenants : 15</p>
+        <h4>Formation du 24/11/2025 au 01/05/2026</h4>
+        <h5>Nombre d'apprenants : 15</h5>
 
-        <div>
-            <h3>Description</h3>
-            <p>
-                Cette formation est destinée aux personnes débutantes passionnées par la technologie et à celles envisageant une carrière dans le développement informatique. Cours de pointe tels que la programmation orientée objet, le dev Back-End avec Java Spring Boot, Node.js, PHP et Symfony, sans oublier le Front-End avec HTML5, CSS et Javascript avec Angular ainsi qu’une multitude de projets pour mettre en pratique ses compétences.
-            </p>
+        <div class="encadre">
+            <div>
+                <h3>Description</h3>
+                <p>
+                    Cette formation est destinée aux personnes débutantes passionnées par la technologie et à celles envisageant une carrière dans le développement informatique. Cours de pointe tels que la programmation orientée objet, le dev Back-End avec Java Spring Boot, Node.js, PHP et Symfony, sans oublier le Front-End avec HTML5, CSS et Javascript avec Angular ainsi qu’une multitude de projets pour mettre en pratique ses compétences.
+                </p>
+            </div>
+
+            <div>
+                <h3>Liens utiles</h3>
+                <p>
+                    <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">Leetcode</a>
+                    <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">hackerrank</a>
+                    <a href="https://codesignal.com/" target="_blank" rel="noopener noreferrer">CodeSignal</a>
+                    <a href="https://www.codewars.com/" target="_blank" rel="noopener noreferrer">Codewars</a>
+                    <a href="https://exercism.org/" target="_blank" rel="noopener noreferrer">Exercism</a>
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">geeksforgeeks</a>
+                    <a href="https://edabit.com/" target="_blank" rel="noopener noreferrer">Edabit</a>
+                </p>
+            </div>
         </div>
 
-        <div>
-            <h3>Liens utiles</h3>
-            <p><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">Leetcode</a></p>
-            <p><a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">hackerrank</a></p>
-            <p><a href="https://codesignal.com/" target="_blank" rel="noopener noreferrer">CodeSignal</a></p>
-            <p><a href="https://www.codewars.com/" target="_blank" rel="noopener noreferrer">Codewars</a></p>
-            <p><a href="https://exercism.org/" target="_blank" rel="noopener noreferrer">Exercism</a></p>
-            <p><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">geeksforgeeks</a></p>
-            <p><a href="https://edabit.com/" target="_blank" rel="noopener noreferrer">Edabit</a></p>
-        </div>
-
-        <button onclick="window.location.href='index.html';">Retour à l'accueil</button>
+        <button type="button" class="btn btn-primary btn-lg me-5" onclick="window.location.href='index.html';">Retour à l'accueil</button>
     </main>
 </body>
 </html>
