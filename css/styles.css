@@ -1,10 +1,25 @@
 /* ===========================
     RESET / REGLES GLOBALES
    =========================== */
+@font-face {
+    font-family: 'Nunito';
+    src: url('assets/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
-    font-family: 'Nunito', system-ui, sans-serif;
+    font-family: 'Nunito', arial, sans-serif;
 }
+
+html[data-bs-theme="dark"] .btn:not(.btn-details) {
+    border-color: white;
+    color: white;
+}
+
+html[data-bs-theme="dark"] .page-informations div > p {
+    border-color: white!important;
+}²
 
 
 /* ===========================

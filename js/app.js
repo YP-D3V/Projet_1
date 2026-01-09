@@ -75,7 +75,7 @@ function afficherListe(apprenants) {
         <td>${apprenant.nom}</td>
         <td>${apprenant.prenom}</td>
         <td>${apprenant.ville}</td>
-        <td><a href="#" class="btn btn-sm btn-outline-primary">Détail</a></td>
+        <td><a href="#" class="btn btn-details btn-sm btn-outline-primary">Détail</a></td>
         `;
         tbody.appendChild(tr);
     });
@@ -92,7 +92,7 @@ function afficherCartes(apprenants) {
         carte.innerHTML = `
             <h3>${apprenant.nom} ${apprenant.prenom}</h3>
             <p>Ville : ${apprenant.ville}</p>
-            <a href="">Détails</a>
+            <a href="#" class="btn btn-details btn-sm btn-outline-primary">Détail</a>
         `;
         container.appendChild(carte);
     });
@@ -118,6 +118,8 @@ function init() {
 
 window.addEventListener('DOMContentLoaded', init)
 
+
+//=============Modal===================//
 
 
 
