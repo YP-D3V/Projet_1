@@ -102,7 +102,9 @@ function afficherCartes(apprenants) {
 
 function init() {
     appliquerPreferences();
+    if (document.getElementById('apprenants-table')) {
     chargerApprenants();
+    }
 
     // Écouter les changements des radios
     document.querySelectorAll('input[name="affichage"]').forEach(radio => {
